@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Galeri Foto Sederhana Menggunakan HTML, CSS dan Javascript</title>
+
+<style type="text/css">
+body {
+	background: #222;
+	color: #eee;
+	margin-top: 20px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a {
+	color: #FFF;
+}
+a:hover {
+	color: yellow;
+	text-decoration: underline;
+}
+.thumbnails img {
+	height: 80px;
+	border: 4px solid #555;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+}
+
+.thumbnails img:hover {
+	border: 4px solid #00ccff;
+	cursor:pointer;
+}
+
+.preview img {
+	border: 4px solid #444;
+	padding: 1px;
+	width: 800px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="gallery" align="center">
+	<h2>Galeri Foto</h2>
+	<p>Contoh Galeri Foto Menggunakan HTML, CSS dan Javascript</p>
+
+	<br />
+	<div class="thumbnails">
+	<img src="E:\kuliah alfian\pbo\foto1.jpg" alt="Gambar_foto1" title="Ini adalah fotoku">
+	<img src="E:\foto cafe asna\foto2.jpg">
+	<img src="E:\foto cafe asna\foto3.jpg">
+	<img onmouseover="preview.src=E:\foto cafe asna.src" name="foto4" src="E:\foto cafe asna\foto4.jpg" alt=""/>
+	<img onmouseover="preview.src=E:\foto cafe asna.src" name="foto5" src="E:\foto cafe asna\foto5.jpg" alt=""/>
+	</div><br/>
+	<div class="preview" align="center">
+		<img name="preview" src="E:\foto cafe asna\foto1.jpg" alt=""/>
+	</div>
+</div>
+</body>
+</html>
+
